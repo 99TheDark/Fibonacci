@@ -2,7 +2,7 @@ include("fib.jl")
 
 using .Fibonacci
 
-function calcAll()
+function calcAll()::Vector{Int64}
     # Easily goes past the integer limit (0 = min, 91 = max)
     arr = []
     for i in range(0, 91)
@@ -11,7 +11,7 @@ function calcAll()
     return arr
 end
 
-function calculate(num::Int64)
+function calculate(num::Int64)::Nothing
     for _ in range(length=num) calcAll() end
 end
 
