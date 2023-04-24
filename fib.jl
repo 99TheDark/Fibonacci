@@ -3,7 +3,7 @@ module Fibonacci
     fibCache = Dict{Int64,Int64}()
 
     function fibonacci(n::Int64)::Int64
-        if (n <= 1)
+        if n <= 1
             return 1
         else
             if !haskey(fibCache, n)
