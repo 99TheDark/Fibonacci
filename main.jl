@@ -12,7 +12,7 @@ function calcAll()
 end
 
 function calculate(num::Int64)
-    for i in range(length=num) calcAll() end
+    for _ in range(length=num) calcAll() end
 end
 
 @time calculate(10000)
