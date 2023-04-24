@@ -15,5 +15,6 @@ function calculate(num::Int64)
     for i in range(length=num) calcAll() end
 end
 
-# Getting about 0.25s for 10,000
 @time calculate(10000)
+
+println(calcAll())
